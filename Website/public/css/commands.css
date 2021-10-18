@@ -1,0 +1,205 @@
+html, div {
+--scrollbarBG: #2B2C2D;
+--thumbBG: #696F73;;
+}
+body::-webkit-scrollbar {
+width: 11px;
+}
+body {
+scrollbar-width: thin;
+scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+background-color: var(--thumbBG) ;
+border-radius: 6px;
+border: 3px solid var(--scrollbarBG);
+}
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #2B2C2D;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #09a0ad;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #064860;
+}
+
+#commandDiv {
+  height: 350px;
+  width:200px;
+  overflow:auto;
+  overflow-y: scroll;
+  position: absolute;
+  top: 110px;
+  border-bottom: 4px solid #09a0ad;
+  border-top: 4px solid #09a0ad;
+  border-left: 4px solid #09a0ad;
+}
+
+table {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+th, td {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 125px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+th {
+  font-size: 20px;
+  border-bottom: 4px solid #09a0ad;
+}
+
+label, input {
+
+}
+
+td > input {
+  border-radius: 15px;
+  color:white;
+  background-color: #09a0ad;
+  border: 2px solid #09a0ad;
+      cursor: pointer;
+}
+
+label {
+  margin-bottom: 10px;
+}
+.header {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    float: left;
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+    height: 100px;
+    width: 140px;
+    background-color: #09a0ad;
+    border-radius: 20px;
+  }
+  .nav {
+    background-color: #09a0ad;
+    border-radius: 20px;
+    cursor: pointer;
+      float:right;
+      height: 30;
+  }
+   #dashButton {
+    list-style-type: none;
+    height: 30;
+    border-radius: 20px;
+    font-size: 15;
+  }
+  #dashButton > a {
+    display: block;
+    width: 90px;
+    height: 30px;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+  }
+  #dashButton:hover {
+    background-color: #064860;
+  }
+
+  body {
+    color: white;
+    font-family: 'Comfortaa', cursive;
+  background-color: #3A3E41;
+  }
+
+  #commandInfo {
+    visibility: hidden;
+  }
+
+  #commandInfo.show {
+    visibility: visible;
+    float: left;
+    position: absolute;
+    top: 90px;
+    left: 225px;
+  }
+  #commandForm > label > input {
+    border-radius: 15px;
+    text-align: center;
+    width: 100px;
+  }
+  #showAddCommand {
+    border-radius: 15px;
+    color:white;
+    background-color: #09a0ad;
+    border-radius: 10px;
+    border: 2px solid #09a0ad;
+    left: 200px;
+    top: 10px;
+    position: absolute;
+    height: 25px;
+    cursor: pointer;
+  }
+  #submitCommandButton {
+    font-size: 17px;
+    position: absolute;
+    left:15px;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 15px;
+    color:white;
+    background-color: #09a0ad;
+    border: 2px solid #09a0ad;
+    cursor: pointer;
+  }
+  #delForm {
+    position: absolute;
+    top: 10px;
+    left: 350px;
+  }
+  #deleteCommand {
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    border: 2px solid white;
+    text-align: center;
+    color:black !important;
+    background-color: white !important;
+  }
+  #deleteCommandButton {
+    font-size: 17px;
+    position: absolute;
+    left:15px;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 15px;
+    color:white;
+    background-color: #09a0ad;
+    border: 2px solid #09a0ad;
+    cursor: pointer;
+  }
+  #submitStatus{
+    color: red;
+    position: absolute;
+    left: 190;
+    top: 336;
+    width: fit-content;
+  }

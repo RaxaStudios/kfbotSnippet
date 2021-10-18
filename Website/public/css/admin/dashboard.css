@@ -1,0 +1,311 @@
+html, div {
+--scrollbarBG: #2B2C2D;
+--thumbBG: #696F73;;
+}
+body::-webkit-scrollbar {
+width: 11px;
+}
+body {
+scrollbar-width: thin;
+scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+background-color: var(--thumbBG) ;
+border-radius: 6px;
+border: 3px solid var(--scrollbarBG);
+}
+.header {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    float: left;
+    top: 10px;
+    right: 10px;
+    font-size: 1em;
+    height: 100px;
+    width: 140px;
+    background-color: #09a0ad;
+    border-radius: 20px;
+  }
+  .nav {
+    background-color: #09a0ad;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden;
+      float:left;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+  }
+  li a {
+    display: block;
+    color: white;
+    padding: 1em 1.5em;
+
+    text-align: center;
+    text-decoration: none;
+  }
+  li:hover {
+    background-color: #064860;
+  }
+  body {
+    font-family: 'Comfortaa', cursive;
+    background-color: #3A3E41;
+  }
+
+
+
+  #nav {
+      	z-index: 999;
+      	position: fixed;
+      	top: $desktop-header-height;
+      	right: -600px;
+      	height: calc(100vh - #{$desktop-header-height});
+      	padding: $side-margin;
+      	display: flex;
+      	flex-direction: column;
+      	align-items: right;
+      	justify-content: center;
+      	transition: right ease-in-out 0.4s;
+  }
+  #nav ul {
+      	list-style: none;
+      	cursor: pointer;
+  }
+  #nav.showing {
+        right: 0;
+        top: 80;
+  }
+
+
+  #nav-icon {
+        width: 60px;
+        height: 45px;
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+      #nav-icon span {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+      }
+
+
+
+      #nav-icon span:nth-child(1) {
+        top: 0px;
+      }
+
+      #nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
+        top: 18px;
+      }
+
+      #nav-icon span:nth-child(4) {
+        top: 36px;
+      }
+
+      #nav-icon.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+
+      #nav-icon.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      #nav-icon.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+
+      #nav-icon.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+
+
+
+
+
+    #restartBot {
+      display: block;
+      width: 150px;
+      height: 90px;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20;
+      background-color: #09a0ad;
+      border-radius: 20px;
+      border: 0.5px;
+      cursor: pointer;
+margin-top: 75px;
+    }
+
+#submitSubCount {
+      display: block;
+      width: 190px;
+      height: 30px;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20;
+      background-color: #09a0ad;
+      border-radius: 20px;
+      cursor: pointer;
+position:absolute;
+top: 75px;
+    }
+
+    #subCountDiv {
+      visibility: hidden;
+      position:absolute;
+      top: 10px;
+      left: 200px;
+      border: 2px solid #09a0ad;
+      border-radius: 10px;
+      padding: 10px;
+      width: 200px;
+      height: 250px;
+      color: white;
+      font-family: 'Comfortaa', cursive;
+    }
+
+	#setSubCount {
+	position: absolute;
+	top: 20px;
+  left : 15px;
+}
+#subCount {
+  height: 100px;
+}
+#currentSubCount {
+  width: 200px;
+  height: 30px;
+}
+
+    #increaseSubCount, #decreaseSubCount {
+      width: 90px;
+      height: 30px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20;
+      background-color: #09a0ad;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+
+
+
+    #submitCounter {
+          display: block;
+          width: 190px;
+          height: 30px;
+          color: white;
+          padding: 5px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 20;
+          background-color: #09a0ad;
+          border-radius: 20px;
+          cursor: pointer;
+    position:absolute;
+    top: 90px;
+        }
+
+        #counterDiv {
+          position:absolute;
+          top: 10px;
+          left: 450px;
+          border: 2px solid #09a0ad;
+          border-radius: 10px;
+          padding: 10px;
+          width: 200px;
+          color: white;
+          font-family: 'Comfortaa', cursive;
+        }
+
+    	#setCounter {
+    	position: absolute;
+      left : 15px;
+    }
+    #count {
+      height: 100px;
+    }
+    #setCounterText, #setCounterValue {
+      margin: 3px;
+      width: 100px;
+    }
+    #currentCounter {
+      width: 200px;
+      height: 30px;
+    }
+
+        #increaseCounter, #decreaseCounter {
+          width: 90px;
+          height: 30px;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          font-size: 20;
+          background-color: #09a0ad;
+          border-radius: 20px;
+          cursor: pointer;
+        }
+#instagram {
+  visibility: hidden;
+        display: block;
+        width: 230px;
+        height: 30px;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 20;
+        background-color: #09a0ad;
+        border-radius: 20px;
+        cursor: pointer;
+  position:absolute;
+  top: 290px;
+      }
